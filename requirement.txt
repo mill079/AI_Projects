@@ -1,0 +1,59 @@
+Sentiment Analysis Web App
+
+Overview
+
+This project is a **Sentiment Analysis** application built with **Streamlit** that predicts whether a given text expresses a **positive** or **negative** sentiment. It uses natural language processing (NLP) and machine learning techniques to analyze user input and provide real-time sentiment classification.
+
+Features
+
+* Text preprocessing: tokenization, stopword removal, and lemmatization with **NLTK**
+* Feature extraction using **TF-IDF Vectorizer** to convert text into numerical data
+* Classification using a **Naive Bayes** machine learning model
+* Interactive web interface with **Streamlit** for easy user input and immediate prediction
+* Supports binary sentiment classification: **Positive** or **Negative**
+
+Installation
+
+1. Clone the repository:
+
+   git clone <repository_url>
+   
+
+2. Navigate to the project folder:
+
+   cd <project_folder>
+   
+
+3. Install dependencies:
+
+   pip install -r requirements.txt
+   
+Usage
+
+Run the Streamlit app with:
+
+streamlit run app.py
+
+
+Then open the URL displayed in your browser. Enter any text to see the sentiment prediction.
+
+Project Structure
+
+* `app.py` — Streamlit application code
+* `preprocess.py` — Text preprocessing functions
+* `sentiment_model.pkl` — Trained machine learning model
+* `sentiment_vectorizer.pkl` — TF-IDF vectorizer used in preprocessing
+* `requirements.txt` — Project dependencies
+
+Dependencies
+
+* streamlit
+* nltk
+* scikit-learn
+* pandas
+* numpy
+
+About
+
+This app demonstrates the integration of NLP and machine learning to build practical text analysis tools. It is suitable for applications like customer feedback analysis, social media sentiment tracking, and more.
+
